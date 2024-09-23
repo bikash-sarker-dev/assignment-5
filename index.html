@@ -40,7 +40,7 @@
           </div>
           <div class="navbar-end">
             <img src="./assets/coin.png" alt="money icons" />
-            <span class="px-2 font-medium text-xl"> 5500 </span>
+            <span id="my-amount" class="px-2 font-medium text-xl"> 5500 </span>
             <span> BD</span>
           </div>
         </div>
@@ -48,16 +48,22 @@
       </div>
       <!--button option part start  -->
       <div class="text-center mt-20">
-        <button class="btn btn-accent font-semibold text-xl px-7 mr-3">
+        <button
+          id="btn-donation"
+          class="bg-cyan-500 py-4 border rounded-md font-semibold text-xl px-7 mr-3"
+        >
           Donation
         </button>
-        <button class="btn btn-outline text-xl px-7">History</button>
+        <button id="btn-history" class="py-4 border rounded-md text-xl px-7">
+          History
+        </button>
       </div>
     </header>
     <!-- header part end  -->
     <!-- main part start  -->
     <main class="container">
-      <article class="mt-5">
+      <!-- donation part start  -->
+      <div id="card-name" class="mt-5">
         <!-- card 1  -->
         <div class="grid grid-cols-2 my-4 border rounded-lg p-5">
           <div>
@@ -66,9 +72,9 @@
           <div>
             <button class="btn">
               <img src="./assets/coin.png" alt="icons" />
-              <span>0</span> BDT
+              <span id="noakhali-balance">0</span> BDT
             </button>
-            <h3 class="font-bold text-xl my-3">
+            <h3 id="title-noakhali" class="font-bold text-xl my-3">
               Donate for Flood at Noakhali, Bangladesh
             </h3>
             <p class="font-light bg-[rgba(17, 17, 17, 0.7)]">
@@ -81,11 +87,13 @@
             </p>
             <form action="">
               <input
+                id="noakhali-amount"
                 class="w-full border py-5 rounded-md px-3 mt-8 mb-6"
                 type="text"
                 placeholder="Write Donation Amount"
               />
               <button
+                id="donate-noakhali"
                 class="bg-[#00BBA6] w-full font-semibold text-xl py-5 rounded-lg"
               >
                 Donate Now
@@ -165,12 +173,57 @@
             </form>
           </div>
         </div>
-      </article>
+        <!-- modal part  -->
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box text-center">
+            <h3 class="font-bold text-4xl">Congrats !</h3>
+            <img class="my-8 mx-auto h-16" src="./assets/coin.png" alt="icon" />
+            <p class="py-4">You Have Donated for Humankind</p>
+            <h4 class="text-2xl font-bold">Successfully</h4>
+            <div class="modal-action flex justify-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button id="modal-close" class="btn text-lg font-semibold px-6">
+                Close Confirmation
+              </button>
+            </div>
+          </div>
+        </dialog>
+      </div>
+      <!-- donation part end  -->
+      <!-- History part start  -->
+      <div id="history" class="hidden">
+        <div class="border rounded-lg p-5 my-7">
+          <h3 class="font-bold text-xl my-3">
+            96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+          </h3>
+          <p class="font-light bg-[rgba(17, 17, 17, 0.7)]">
+            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+          </p>
+        </div>
+        <!-- card 2  -->
+        <div class="border rounded-lg p-5 my-7">
+          <h3 class="font-bold text-xl my-3">
+            96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+          </h3>
+          <p class="font-light bg-[rgba(17, 17, 17, 0.7)]">
+            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+          </p>
+        </div>
+      </div>
+      <!-- History part end  -->
     </main>
     <!-- main part end  -->
     <!-- footer part start  -->
     <footer>
       <div class="h-24 w-full bg-amber-100 mt-14"></div>
     </footer>
+
+    <!-- javascript link  -->
+    <script src="./utilities/createHistory.js"></script>
+    <script src="./utilities/getTextHeading.js"></script>
+    <script src="./utilities/inputFiledEmpty.js"></script>
+    <script src="./utilities/getInput.js"></script>
+    <script src="./utilities/getAmount.js"></script>
+    <script src="./js/donate.js"></script>
   </body>
 </html>
