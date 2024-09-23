@@ -5,3 +5,9 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.container {
+  max-width: 1140px !important;
+  width: 90%;
+  margin: 0 auto;
+}
