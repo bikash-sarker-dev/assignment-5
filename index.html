@@ -39,7 +39,9 @@
           </div>
           <div class="navbar-center">
             <img src="./assets/logo.png" alt="logo" />
-            <a class="font-semibold text-xl px-2">Donate Bangladesh</a>
+            <a class="font-semibold text-xl px-2 hidden md:block"
+              >Donate Bangladesh</a
+            >
           </div>
           <div class="navbar-end">
             <img src="./assets/coin.png" alt="money icons" />
@@ -64,15 +66,17 @@
     </header>
     <!-- header part end  -->
     <!-- main part start  -->
-    <main class="container">
+    <main class="container px-5 lg:px-0">
       <!-- donation part start  -->
       <div id="card-name" class="mt-9">
         <!-- card 1  -->
-        <div class="grid grid-cols-2 my-4 border rounded-lg p-5">
+        <div
+          class="grid lg:grid-cols-2 my-4 border lg:space-x-6 max-w-3xl lg:max-w-full mx-auto rounded-lg p-5"
+        >
           <div>
-            <img src="./assets/noakhali.png" alt="feni" />
+            <img class="w-full" src="./assets/noakhali.png" alt="feni" />
           </div>
-          <div>
+          <div class="mt-4 lg:mt-0">
             <button class="btn">
               <img src="./assets/coin.png" alt="icons" />
               <span id="noakhali-balance">0</span> BDT
@@ -105,11 +109,13 @@
           </div>
         </div>
         <!-- card 2  -->
-        <div class="grid grid-cols-2 my-4 border rounded-lg p-5">
+        <div
+          class="grid lg:grid-cols-2 my-4 border lg:space-x-6 max-w-3xl lg:max-w-full mx-auto rounded-lg p-5"
+        >
           <div>
-            <img src="./assets/feni.png" alt="feni" />
+            <img class="w-full" src="./assets/feni.png" alt="feni" />
           </div>
-          <div>
+          <div class="mt-4 lg:mt-0">
             <button class="btn">
               <img src="./assets/coin.png" alt="icons" />
               <span id="feni-balance">600</span> BDT
@@ -143,11 +149,13 @@
           </div>
         </div>
         <!-- card 3  -->
-        <div class="grid grid-cols-2 my-4 border rounded-lg p-5">
+        <div
+          class="grid lg:grid-cols-2 my-4 border lg:space-x-6 max-w-3xl lg:max-w-full mx-auto rounded-lg p-5"
+        >
           <div>
-            <img src="./assets/quota-protest.png" alt="feni" />
+            <img class="w-full" src="./assets/quota-protest.png" alt="feni" />
           </div>
-          <div>
+          <div class="mt-4 lg:mt-0">
             <button class="btn">
               <img src="./assets/coin.png" alt="icons" />
               <span id="quota-balance">600</span> BDT
@@ -183,9 +191,13 @@
         <!-- modal part  -->
         <dialog id="my_modal_1" class="modal">
           <div class="modal-box text-center">
-            <h3 class="font-bold text-4xl">Congrats !</h3>
-            <img class="my-8 mx-auto h-16" src="./assets/coin.png" alt="icon" />
-            <p class="py-4">You Have Donated for Humankind</p>
+            <h3 class="font-bold text-3xl lg:text-4xl">Congrats !</h3>
+            <img
+              class="my-5 lg:my-8 mx-auto h-16"
+              src="./assets/coin.png"
+              alt="icon"
+            />
+            <p class="py-2 lg:py-4">You Have Donated for Humankind</p>
             <h4 class="text-2xl font-bold">Successfully</h4>
             <div class="modal-action flex justify-center">
               <!-- if there is a button in form, it will close the modal -->
