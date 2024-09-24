@@ -109,9 +109,9 @@
           <div>
             <button class="btn">
               <img src="./assets/coin.png" alt="icons" />
-              <span>600</span> BDT
+              <span id="feni-balance">600</span> BDT
             </button>
-            <h3 class="font-bold text-xl my-3">
+            <h3 id="title-feni" class="font-bold text-xl my-3">
               Donate for Flood Relief in Feni,Bangladesh
             </h3>
             <p class="font-light bg-[rgba(17, 17, 17, 0.7)]">
@@ -125,11 +125,13 @@
             </p>
             <form action="">
               <input
+                id="feni-amount"
                 class="w-full border py-5 rounded-md px-3 mt-8 mb-6"
                 type="text"
                 placeholder="Write Donation Amount"
               />
               <button
+                id="donate-feni"
                 class="bg-[#00BBA6] w-full font-semibold text-xl py-5 rounded-lg"
               >
                 Donate Now
@@ -145,9 +147,9 @@
           <div>
             <button class="btn">
               <img src="./assets/coin.png" alt="icons" />
-              <span>600</span> BDT
+              <span id="quota-balance">600</span> BDT
             </button>
-            <h3 class="font-bold text-xl my-3">
+            <h3 id="title-quota" class="font-bold text-xl my-3">
               Aid for Injured in the Quota Movement
             </h3>
             <p class="font-light bg-[rgba(17, 17, 17, 0.7)]">
@@ -161,11 +163,13 @@
             </p>
             <form action="">
               <input
+                id="quota-amount"
                 class="w-full border py-5 rounded-md px-3 mt-8 mb-6"
                 type="text"
                 placeholder="Write Donation Amount"
               />
               <button
+                id="donate-quota"
                 class="bg-[#00BBA6] w-full font-semibold text-xl py-5 rounded-lg"
               >
                 Donate Now
@@ -191,25 +195,7 @@
       </div>
       <!-- donation part end  -->
       <!-- History part start  -->
-      <div id="history" class="hidden">
-        <div class="border rounded-lg p-5 my-7">
-          <h3 class="font-bold text-xl my-3">
-            96500 Taka is Donated for famine-2024 at Feni, Bangladesh
-          </h3>
-          <p class="font-light bg-[rgba(17, 17, 17, 0.7)]">
-            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-          </p>
-        </div>
-        <!-- card 2  -->
-        <div class="border rounded-lg p-5 my-7">
-          <h3 class="font-bold text-xl my-3">
-            96500 Taka is Donated for famine-2024 at Feni, Bangladesh
-          </h3>
-          <p class="font-light bg-[rgba(17, 17, 17, 0.7)]">
-            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-          </p>
-        </div>
-      </div>
+      <div id="history" class="hidden"></div>
       <!-- History part end  -->
     </main>
     <!-- main part end  -->
@@ -224,6 +210,7 @@
     <script src="./utilities/inputFiledEmpty.js"></script>
     <script src="./utilities/getInput.js"></script>
     <script src="./utilities/getAmount.js"></script>
+    <script src="./utilities/getDonate.js"></script>
     <script src="./js/donate.js"></script>
   </body>
 </html>

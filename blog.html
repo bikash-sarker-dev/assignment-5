@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Donate Bangladesh</title>
     <!-- fonts add -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,5 +21,92 @@
     <!-- custom style link  -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body class="lexend-normal">
+    <!-- header part start  -->
+    <header class="">
+      <div class="bg-amber-100 pt-2 pb-6">
+        <!-- navbar part  -->
+        <div class="navbar container mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <button class="btn btn-accent font-semibold text-xl px-7">
+                Home
+              </button>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <img src="./assets/logo.png" alt="logo" />
+            <a class="font-semibold text-xl px-2">Donate Bangladesh</a>
+          </div>
+          <div class="navbar-end">
+            <img src="./assets/coin.png" alt="money icons" />
+            <span id="my-amount" class="px-2 font-medium text-xl"> 5500 </span>
+            <span> BD</span>
+          </div>
+        </div>
+        <!-- navbar part end  -->
+      </div>
+    </header>
+    <!-- header part end  -->
+    <!-- main part start  -->
+    <main class="container">
+      <div>
+        <h1 class="text-4xl font-bold">Important FAQ</h1>
+
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              what is the Document Object Model (DOM) ?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM ?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              what is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              how do you manipulate an element`s attributes and style using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main part end  -->
+    <!-- footer part start  -->
+    <footer>
+      <div class="h-24 w-full bg-amber-100 mt-14"></div>
+    </footer>
+
+    <!-- javascript link  -->
+    <script src="./utilities/createHistory.js"></script>
+    <script src="./utilities/getTextHeading.js"></script>
+    <script src="./utilities/inputFiledEmpty.js"></script>
+    <script src="./utilities/getInput.js"></script>
+    <script src="./utilities/getAmount.js"></script>
+    <script src="./js/donate.js"></script>
+  </body>
 </html>
