@@ -3,7 +3,6 @@ document
   .getElementById("donate-noakhali")
   .addEventListener("click", function (e) {
     e.preventDefault();
-
     getAllDonationSubmit(
       "noakhali-amount",
       "noakhali-balance",
@@ -13,7 +12,6 @@ document
   });
 
 // Donate for Flood Relief in Feni,Bangladesh
-
 document.getElementById("donate-feni").addEventListener("click", function (e) {
   e.preventDefault();
   console.log("alright");
@@ -37,7 +35,7 @@ document.getElementById("donate-quota").addEventListener("click", function (e) {
   );
 });
 
-//   close modal function
+// close modal function
 document.getElementById("modal-close").addEventListener("click", function () {
   document.getElementById("my_modal_1").close();
 });
@@ -65,4 +63,22 @@ document.getElementById("btn-history").addEventListener("click", function () {
     .classList.add("bg-cyan-500", "font-semibold");
   document.getElementById("history").classList.remove("hidden");
   document.getElementById("card-name").classList.add("hidden");
+});
+
+// this is click blog button.then go to blog page
+document.getElementById("blog-page").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});
+
+// this is a sticky menu working
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 20) {
+    document
+      .getElementById("header-bg")
+      .classList.add("bg-gray-100", "pb-8", "border-b");
+  } else {
+    document
+      .getElementById("header-bg")
+      .classList.remove("bg-gray-100", "pb-8", "border-b");
+  }
 });
