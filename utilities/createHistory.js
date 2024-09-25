@@ -1,4 +1,6 @@
 function createHistory(headText, taka) {
+  let historyEmpty = document.getElementById("empty");
+  let parentElement = document.getElementById("history");
   let createDiv = document.createElement("div");
   createDiv.innerHTML = `<div class="border rounded-lg p-5 my-7">
           <h3 class="font-bold text-xl my-3">
@@ -8,6 +10,6 @@ function createHistory(headText, taka) {
            <strong>Date :</strong>  ${new Date()}
           </p>
         </div>`;
-
-  return document.getElementById("history").appendChild(createDiv);
+  historyEmpty.classList.add("hidden");
+  return parentElement.appendChild(createDiv);
 }

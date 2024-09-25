@@ -14,7 +14,6 @@ document
 // Donate for Flood Relief in Feni,Bangladesh
 document.getElementById("donate-feni").addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("alright");
   getAllDonationSubmit(
     "feni-amount",
     "feni-balance",
@@ -26,7 +25,6 @@ document.getElementById("donate-feni").addEventListener("click", function (e) {
 // Aid for Injured in the Quota Movement
 document.getElementById("donate-quota").addEventListener("click", function (e) {
   e.preventDefault();
-
   getAllDonationSubmit(
     "quota-amount",
     "quota-balance",
